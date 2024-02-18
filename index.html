@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+            <circle-page>
+            <div slot="arrow" class="Arrow">
+                <img src="Images/Arrow sign.png" alt="Arrow">
+                Back to list   
+            </div> 
+            <div slot="day" id="plus">
+                <h1>TODAY</h1>
+                <img src="Images/plus sign.png" alt="">
+            </div>
+        </circle-page>
+
+        <progress-bar percent = '20'>
+
+        </progress-bar>
+       
+    
+    <hr>
+    33% complete
+    
+        
+        <circle-page class="page">
+            <div slot="ditation">
+                <input type="checkbox">
+                Meditation
+
+            </div>
+            <div cl slot="pick">
+                <input type="checkbox">
+                Pick up Anna</div>
+            <div slot="set" >
+                <input type="checkbox">
+                Set Up meeting with Jay</div>
+            <div slot="daily">
+                <input type="checkbox">
+                Finish Daily Ui</div>
+            <div slot="edit"><input type="checkbox">
+                Second edits on article</div>
+            <div slot="mail"><input type="checkbox">
+                Mail Chris</div>
+
+        </circle-page>
+
+        <!-- <circle-page slot="pick">Pick up Anna</circle-page>
+        <circle-page>Set up meeting with Jay</circle-page>
+        <circle-page>Finish Daily Ui
+        </circle-page>
+        <circle-page>Second edits on article</circle-page>
+        <circle-page>mail Chris</circle-page> -->
+
+        
+    
+    <h4>Pull from recurring lists</h4>
+        <div class="page-2" >
+        <button-page slot="daily" color = "Red">Daily</button-page>
+        <button-page>Weekly</button-page>
+        <button-page>Monthly</button-page>
+        <button-page>Occassionally</button-page>
+    </div>
+    
+
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="button.js"></script>
+    <script src="progress-bar.js"></script>
+</body>
+</html>
